@@ -1,0 +1,168 @@
+body {
+  background-image: linear-gradient(black, white);
+  display: block;
+}
+h1 {
+  color: #f0ffff;
+  font-family: arial;
+  text-align: center;
+  margin-left: 0pc;
+}
+p {
+  color: #e0ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+  font-size: large;
+}
+h2 {
+  background-color: indigo;
+  padding: 20px;
+}
+nav {
+  text-align: right;
+}
+img {
+  border-radius: 7px;
+}
+#bottomless {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  color: whitesmoke;
+}
+
+#topofpage {
+  bottom: 0;
+  left: 80px;
+  position: fixed;
+  color: yellow;
+}
+#container {
+  width: 80%;
+  min-width: 800px;
+  max-width: 800px; /*very useful, makes it so page doesnt mess up with zooming in, maintains the sizes of everything*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tekkenwikibutton {
+  color: ivory;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(9, 1, 122);
+  animation: animator2 10s infinite;
+}
+.titles {
+  text-align: center;
+  font-size: 2em;
+  color: whitesmoke;
+  font-style: italic;
+}
+.alignment {
+  /*this is for all the bordered card with this character names */
+  float: left;
+  border: #7700ff solid 5px;
+  background-color: red;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+  text-align: center;
+}
+@keyframes animator {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: #7700ff;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+.akumabutton {
+  background-color: #00ffbf;
+}
+.lawbutton {
+  background-color: #00ffff;
+  border-color: #ffffff;
+}
+.armorkingbutton {
+  background-color: #00ffbf;
+  border-color: #ffffff;
+}
+.kingbutton {
+  background-color: #00ffbf;
+}
+.fengbutton {
+  background-color: chocolate;
+  color: cornsilk;
+}
+.giggasbutton {
+  background-color: gainsboro;
+  color: dimgray;
+}
+.bryanbutton {
+  background-color: firebrick;
+  color: greenyellow;
+}
+.hwoarangbutton {
+  background-color: lightskyblue;
+  color: midnightblue;
+}
+.pandabutton {
+  background-color: ivory;
+  color: orange;
+}
+a {
+  text-decoration: none;
+}
+img:hover {
+  background-color: gold;
+}
+.alignment img:hover {
+  border-radius: 500px;
+  opacity: 0.9;
+}
+.titles a:hover {
+  background-color: steelblue;
+  color: white;
+}
+p:hover {
+  color: black;
+}
+.alignmentak {
+  float: left;
+  border: #7700ff solid 5px;
+  background-color: red;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+  text-align: center;
+}
+@media only screen and (max-width: 720px) {
+  /*used to account for smaller screens, readjust browser size to see effect*/
+
+  #container {
+    width: auto;
+    margin: 0;
+    max-width: 500px;
+  }
+  .titles {
+    max-width: 500px;
+    display: list-item;
+    width: auto;
+  }
+
+  .charactertiles {
+    max-width: 500px;
+    width: auto;
+    float: left;
+    margin: 0;
+  }
+  h1 {
+    max-width: 500px;
+    margin: 0;
+    width: auto;
+  }
+}

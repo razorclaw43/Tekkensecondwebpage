@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  width: auto;
+  background-image: linear-gradient(TO BOTTOM, black, white);
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3000px;
+}
+header {
+  display: block;
+  height: 200px;
+  text-align: center;
+  margin-top: 0;
+  border-bottom: dotted yellow 10px;
+  max-width: 896px;
+}
+header img {
+  height: 200px;
+  position: center;
+}
+h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 25pt;
+  margin-top: 0;
+  border-bottom: 10px dotted purple;
+  max-width: 896px;
+  color: white;
+}
+nav {
+  text-align: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  color: ivory;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(9, 1, 122);
+  font-size: xx-large;
+  font-style: italic;
+}
+
+nav a {
+  text-decoration: none;
+  color: ivory;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+.akuma {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.akuma p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.akuma img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+.law {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.law p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.law img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+
+.steve {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.steve p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.steve img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+.king {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.king p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.king img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+.feng {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.feng p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.feng img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+.bryan {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.bryan p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.bryan img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+.giggas {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.giggas p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.giggas img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+.panda {
+  margin: 0;
+  width: auto;
+  border: #7700ff solid 5px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: red;
+  box-shadow: 10px 10px 10px rgb(15, 122, 15);
+  animation: animator 10s infinite;
+}
+.panda p {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+.panda img {
+  border-radius: 12px;
+  border-bottom: solid 2px green;
+}
+img:hover {
+  border-radius: 85px;
+}
+nav li:hover {
+  border-radius: 85px;
+  background-color: steelblue;
+}
+header img:hover {
+  background-color: gold;
+  border-radius: 15px;
+}
+@keyframes animator {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: #7700ff;
+  }
+  to {
+    background-color: green;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /*used to account for smaller screens, readjust browser size to see effect*/
+  main {
+    margin-left: 60px;
+  }
+  #resizing {
+    width: 270px;
+    height: 190px;
+  }
+  nav li {
+    display: list-item;
+  }
+}
