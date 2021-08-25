@@ -229,6 +229,31 @@ header img:hover {
   background-color: gold;
   border-radius: 15px;
 }
+.topofpage {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+.topofpage a {
+  text-decoration: none;
+  color: black;
+}
+.forms {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+h3 {
+  color: antiquewhite;
+}
+label {
+  color: aliceblue;
+}
+input {
+  background-color: aqua;
+}
+video {
+  padding: 5px;
+}
 @keyframes animator {
   from {
     background-color: red;
@@ -240,10 +265,11 @@ header img:hover {
     background-color: green;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 720px) {
   /*used to account for smaller screens, readjust browser size to see effect*/
   main {
     margin-left: 60px;
+    float: left;
   }
   #resizing {
     width: 270px;
@@ -251,5 +277,28 @@ header img:hover {
   }
   nav li {
     display: list-item;
+    max-width: 440px;
+  }
+  footer {
+    font-size: 50%;
+  }
+  .topofpage a {
+    font-size: 50%;
+  }
+  .forms {
+    margin-left: 35px;
+    margin-bottom: 35px;
+  }
+  .forms label {
+    color: black;
+  }
+  h3 {
+    color: blueviolet;
+  }
+  video {
+    padding-bottom: 50px;
+  }
+  audio {
+    padding-bottom: 50px;
   }
 }
