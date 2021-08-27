@@ -6,8 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheets/tempfile.css" />
     <link rel="icon" href="./images/ttt2.jpg" />
+    <script>
+      function checking() {
+        if (document.forms[0].rank.value == "") {
+          alert("Dan rank cannot be empty");
+          return false;
+        }
+        if (document.forms[0].rank.value <= 9) {
+          alert("Dan too low ya noob");
+          return false;
+        }
+        if (document.forms[0].link.value == "") {
+          alert("GitHUB url field cannot be empty");
+          return false;
+        }
+        if (document.forms[0].bday.value == "") {
+          alert("Birthdate field cannot be empty");
+          return false;
+        }
+        alert("Details Entered have been accepted");
+        return true;
+      }
+    </script>
   </head>
   <body>
+    <script>
+      /*this lets use change the background color of my webpage, using js ps:maroon/brown are good colours. apparently cant override stylesheet*/
+      /*var choiceofColor;
+      choiceofColor = prompt(
+        "Pick the background colour of this page (can use hex code)"
+      );
+      document.bgColor = choiceofColor;*/
+    </script>
     <div class="container">
       <header>
         <a
@@ -16,7 +46,14 @@
           ><img src="./images/tekkenlogo.png" id="resizing" alt="t7logo"
         /></a>
       </header>
-      <h2>Select Your Character</h2>
+      <h2>
+        Last modified (Using Js):
+        <a href="#" class="usingjs" onmouseover="alert('Using Javascipt');"
+          ><script>
+            document.write(document.lastModified);
+          </script>
+        </a>
+      </h2>
       <nav>
         <ul>
           <li>
@@ -24,7 +61,9 @@
               >Tekken Wiki</a
             >
           </li>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ul>
           <li>
             <a
               href="https://www.deviantart.com/streetmodders/gallery/63225769/tekken-7-mods"
@@ -37,9 +76,11 @@
       <main>
         <div class="akuma">
           <a href="https://www.youtube.com/watch?v=00HZEf2GYd4" target="_blank"
-            ><img src="images/akuma.jpg" alt="akuma" width="220" height="240"
-          /></a>
-          <p>Akuma</p>
+            ><img src="images/akuma.jpg" alt="akuma" width="220" height="240" />
+            <p>Akuma</p>
+            <span
+              ><img src="./images/akumarageart.PNG" alt="akumarageart" /></span
+          ></a>
         </div>
         <div class="law">
           <a href="http://www.google.co.uk"
@@ -92,18 +133,18 @@
           <p>Panda</p>
         </div>
         <div class="forms">
-          <form method="get" action="noobPages.html">
+          <form
+            method="post"
+            action="noobPages.html"
+            onsubmit="return checking();"
+          >
             <h3>Join to become a Tekken Ultra Noob!</h3>
-            <label for="fname">Tekken Dan Ranking</label>
-            <input type="number" id="fname" name="fname" /><br /><br />
-            <label for="lname">GITHUB url:</label>
-            <input type="url" id="lname" name="lname" /><br /><br />
-            <label for="birthdaytime">Birthday (date and time):</label>
-            <input
-              type="datetime-local"
-              id="birthdaytime"
-              name="birthdaytime"
-            /><br /><br />
+            <label for="danranking">Tekken Dan Ranking</label>
+            <input type="number" id="rank" name="rank" /><br /><br />
+            <label for="github">GITHUB url:</label>
+            <input type="url" id="link" name="link" /><br /><br />
+            <label for="birthday">Birthday (date):</label>
+            <input type="date" id="bday" name="bday" /><br /><br />
             <input type="submit" value="Submit" /><input
               type="reset"
               value="Clear"
