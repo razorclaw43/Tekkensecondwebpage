@@ -42,6 +42,10 @@
           "Pick the background colour of this page (can use hex code)"
         );
         document.bgColor = choiceofColor;
+        if (choiceofColor === null) {
+          /*null means if prompts gets cancelled with no input*/
+          document.bgColor = "black";
+        }
       }
     </script>
     <div class="container">
