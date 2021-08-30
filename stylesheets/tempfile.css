@@ -1,11 +1,9 @@
 body {
   margin: 0;
   width: auto;
-  background-image: linear-gradient(TO BOTTOM, black, white);
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  height: 3000px;
 }
 header {
   display: block;
@@ -17,7 +15,6 @@ header {
 }
 header img {
   height: 200px;
-  position: center;
 }
 h2 {
   text-align: center;
@@ -31,6 +28,9 @@ h2 {
 nav {
   text-align: center;
 }
+nav ul {
+  display: inline;
+}
 
 nav li {
   list-style: none;
@@ -40,6 +40,7 @@ nav li {
   box-shadow: 5px 5px 5px rgb(9, 1, 122);
   font-size: xx-large;
   font-style: italic;
+  padding: 10px;
 }
 
 nav a {
@@ -68,6 +69,7 @@ footer {
   box-shadow: 10px 10px 10px rgb(15, 122, 15);
   animation: animator 10s infinite;
 }
+
 .akuma p {
   text-align: center;
   margin-bottom: 0;
@@ -249,11 +251,30 @@ label {
   color: aliceblue;
 }
 input {
-  background-color: aqua;
+  background-color: lime;
 }
 video {
   padding: 5px;
 }
+span {
+  opacity: 0;
+}
+span img {
+  width: 220px;
+  height: 80px;
+}
+a:hover span {
+  display: block;
+  position: relative;
+  bottom: 130px;
+  opacity: 1;
+  transition: ease-in-out 3s;
+}
+.usingjs {
+  text-decoration: none;
+  color: green;
+}
+
 @keyframes animator {
   from {
     background-color: red;
