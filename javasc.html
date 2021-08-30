@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>example stuff</title>
+  </head>
+  <body>
+    <h1>Javascript can validate input</h1>
+    <p>Please input a number between 1 and 10:</p>
+    <input id="numb" type="number" />
+    <button type="button" onclick="oral()">Submit</button>
+    <p id="demo"></p>
+    <script>
+      function oral() {
+        var x;
+        var text;
+        x = document.getElementById("numb").value;
+        if (x < 1 || x > 10) {
+          text = "input aint valid son";
+        } else {
+          text = "all good my man";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

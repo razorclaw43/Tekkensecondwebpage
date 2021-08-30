@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>watever</title>
+    <meta charset="utf-8" />
+    <script>
+      /*var p1 = 500;
+      var p2 = 600;
+
+      var highscore = p1 > p2 ? p1 : p2; //way to shorted code, says if assign highscore to whichever is higher instead of using if statements
+      document.write(highscore);*/
+      /*var a = 1;
+      var text = "";
+      while (a <= 10) {
+        text += "<br>The Number is " + a;
+        a++;*/
+
+      /*var tekkencharacters = ["kazya", "jin", "jack7", "king", "asuka", "lily"];
+      var i = 0;
+      text = "";
+      while (tekkencharacters[i]) {
+        text += tekkencharacters[i] + "<br>";
+        i++;}*/
+      /*text = "";
+      var tekkencharacters = ["kazya", "jin", "jack7", "king", "asuka", "lily"];
+      for (i = 0; tekkencharacters.length < 10; i++) {
+        text += "The Number is " + i + "<br>";}*/
+      /*function myFunction() {
+        var choiceofColor;
+        choiceofColor = prompt("Enter your desired background colour");
+        document.bgColor = choiceofColor;
+      }
+      function timered() {
+        setTimeout(myFunction, 3000);
+      }*/
+
+      function myFunction() {
+        var image = document.getElementById("feng");
+        var array = [
+          "file:///C:/Users/ahmed/Documents/MeWebsite/images/akuma.jpg",
+          "file:///C:/Users/ahmed/Documents/MeWebsite/images/ak.jpg",
+        ];
+        var i = 0;
+        if (i >= array.length) {
+          i = 0;
+          i++;
+          document.getElementById("akuma").src =
+            "file:///C:/Users/ahmed/Documents/MeWebsite/images/ak.jpg";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <button type="button" onclick="myFunction()">Click here!</button>
+    <div>
+      <img src="images/ak.jpg" width="220" height="240" id="ak" />
+      <img src="images/akuma.jpg" width="220" height="240" id="akuma" />
+      <img src="images/akumas.jpg" width="220" height="240" id="akuma2" />
+      <img src="images/feng.jpg" width="220" height="240" id="feng" />
+    </div>
+  </body>
+</html>

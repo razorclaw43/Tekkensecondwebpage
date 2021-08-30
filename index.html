@@ -31,12 +31,18 @@
   </head>
   <body>
     <script>
+      // sets page to this colour
+
+      document.bgColor = "black";
+
       /*this lets use change the background color of my webpage, using js ps:maroon/brown are good colours. apparently cant override stylesheet*/
-      /*var choiceofColor;
-      choiceofColor = prompt(
-        "Pick the background colour of this page (can use hex code)"
-      );
-      document.bgColor = choiceofColor;*/
+      function colourChanger() {
+        var choiceofColor;
+        choiceofColor = prompt(
+          "Pick the background colour of this page (can use hex code)"
+        );
+        document.bgColor = choiceofColor;
+      }
     </script>
     <div class="container">
       <header>
@@ -48,7 +54,7 @@
       </header>
       <h2>
         Last modified (Using Js):
-        <a href="#" class="usingjs" onmouseover="alert('Using Javascipt');"
+        <a href="#" class="usingjs" onclick="alert('Using Javascipt');"
           ><script>
             document.write(document.lastModified);
           </script>
@@ -72,6 +78,11 @@
             >
           </li>
         </ul>
+        <ul>
+          <li>
+            <a href="#" onclick="colourChanger()">Change Background Colour</a>
+          </li>
+        </ul>
       </nav>
       <main>
         <div class="akuma">
@@ -83,7 +94,7 @@
           ></a>
         </div>
         <div class="law">
-          <a href="http://www.google.co.uk"
+          <a href="https://www.youtube.com/watch?v=a0Nof2bMwak" target="_blank"
             ><img
               src="images/law.jpg"
               alt="Marhsall law"
@@ -93,7 +104,7 @@
           <p>Law</p>
         </div>
         <div class="steve">
-          <a href="http://www.google.co.uk"
+          <a href="https://www.youtube.com/watch?v=9mzv0cVNcgA" target="_blank"
             ><img
               src="images/steve.jpg"
               alt="Steve Fox"
@@ -103,44 +114,46 @@
           <p>Steve Fox</p>
         </div>
         <div class="king">
-          <a href="http://www.google.co.uk"
+          <a href="https://www.youtube.com/watch?v=8Ssl0nluge4" target="_blank"
             ><img src="images/king.jpg" alt="King" width="220" height="240"
           /></a>
           <p>King</p>
         </div>
         <div class="feng">
-          <a href="http://www.google.co.uk"
+          <a href="https://www.youtube.com/watch?v=6VGD-2vXbG4" target="_blank"
             ><img src="images/feng.jpg" alt="Feng" width="220" height="240"
           /></a>
           <p>Feng Wei</p>
         </div>
         <div class="bryan">
-          <a href="http://www.google.co.uk"
+          <a href="https://www.youtube.com/watch?v=PSvyG5foCgE" target="_blank"
             ><img src="images/bryan.jpg" alt="Bryan" width="220" height="240"
           /></a>
           <p>Bryan Fury</p>
         </div>
         <div class="giggas">
-          <a href="http://www.google.co.uk"
+          <a href="https://www.youtube.com/watch?v=DCBm3Ss24sQ" target="_blank"
             ><img src="images/giggas.jpg" alt="Giggas" width="220" height="240"
           /></a>
           <p>Giggas</p>
         </div>
         <div class="panda">
-          <a href="http://www.google.co.uk"
+          <a href="https://www.youtube.com/watch?v=H92NCpNqtXI" target="_blank"
             ><img src="images/panda.jpg" alt="Panda" width="220" height="240"
           /></a>
           <p>Panda</p>
         </div>
         <div class="forms">
           <form
+            name="Form1"
             method="post"
             action="noobPages.html"
-            onsubmit="return checking();"
+            onsubmit=" return checking();"
           >
             <h3>Join to become a Tekken Ultra Noob!</h3>
             <label for="danranking">Tekken Dan Ranking</label>
             <input type="number" id="rank" name="rank" /><br /><br />
+            <!--can use required much easier-->
             <label for="github">GITHUB url:</label>
             <input type="url" id="link" name="link" /><br /><br />
             <label for="birthday">Birthday (date):</label>
