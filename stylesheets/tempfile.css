@@ -250,9 +250,9 @@ h3 {
 label {
   color: aliceblue;
 }
-input {
-  background-color: lime;
-}
+/*input {
+  background-color: lime;*/
+
 video {
   padding: 5px;
 }
@@ -263,13 +263,13 @@ span img {
   width: 220px;
   height: 80px;
 }
-a:hover span {
+/*a:hover span {
   display: block;
   position: relative;
   bottom: 130px;
   opacity: 1;
-  transition: ease-in-out 3s;
-}
+  transition: ease-in-out 3s;*/
+
 .usingjs {
   text-decoration: none;
   color: green;
@@ -321,5 +321,8 @@ a:hover span {
   }
   audio {
     padding-bottom: 50px;
+  }
+  #rageart {
+    display: none; /*wont display this image now once on smaller screen*/
   }
 }

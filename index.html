@@ -16,6 +16,10 @@
           alert("Dan too low ya noob");
           return false;
         }
+        if (document.forms[0].rank.value > 20) {
+          alert("U too good son");
+          return false;
+        }
         if (document.forms[0].link.value == "") {
           alert("GitHUB url field cannot be empty");
           return false;
@@ -91,10 +95,20 @@
       <main>
         <div class="akuma">
           <a href="https://www.youtube.com/watch?v=00HZEf2GYd4" target="_blank"
-            ><img src="images/akuma.jpg" alt="akuma" width="220" height="240" />
+            ><img
+              src="images/akuma.jpg"
+              alt="akuma"
+              width="220"
+              height="240"
+              id="akuma"
+              onmouseover="pictureChanger()"
+              onmouseout="reverseChanger()" />
             <p>Akuma</p>
             <span
-              ><img src="./images/akumarageart.PNG" alt="akumarageart" /></span
+              ><img
+                src="./images/akumarageart.PNG"
+                alt="akumarageart"
+                id="rageart" /></span
           ></a>
         </div>
         <div class="law">
@@ -104,6 +118,9 @@
               alt="Marhsall law"
               width="220"
               height="240"
+              id="law"
+              onmouseover="lawChanger()"
+              onmouseout="lawReverse()"
           /></a>
           <p>Law</p>
         </div>
@@ -114,36 +131,74 @@
               alt="Steve Fox"
               width="220"
               height="240"
+              id="steve"
+              onmouseover="steveChanger()"
+              onmouseout="steveReverse()"
           /></a>
           <p>Steve Fox</p>
         </div>
         <div class="king">
           <a href="https://www.youtube.com/watch?v=8Ssl0nluge4" target="_blank"
-            ><img src="images/king.jpg" alt="King" width="220" height="240"
+            ><img
+              src="images/king.jpg"
+              alt="King"
+              width="220"
+              height="240"
+              id="king"
+              onmouseover="kingChanger()"
+              onmouseout="kingReverse()"
           /></a>
           <p>King</p>
         </div>
         <div class="feng">
           <a href="https://www.youtube.com/watch?v=6VGD-2vXbG4" target="_blank"
-            ><img src="images/feng.jpg" alt="Feng" width="220" height="240"
+            ><img
+              src="images/feng.jpg"
+              alt="Feng"
+              width="220"
+              height="240"
+              id="feng"
+              onmouseover="fengChanger()"
+              onmouseout="fengReverse()"
           /></a>
           <p>Feng Wei</p>
         </div>
         <div class="bryan">
           <a href="https://www.youtube.com/watch?v=PSvyG5foCgE" target="_blank"
-            ><img src="images/bryan.jpg" alt="Bryan" width="220" height="240"
+            ><img
+              src="images/bryan.jpg"
+              alt="Bryan"
+              width="220"
+              height="240"
+              id="bryan"
+              onmouseover="bryanChanger()"
+              onmouseout="bryanReverse()"
           /></a>
           <p>Bryan Fury</p>
         </div>
         <div class="giggas">
           <a href="https://www.youtube.com/watch?v=DCBm3Ss24sQ" target="_blank"
-            ><img src="images/giggas.jpg" alt="Giggas" width="220" height="240"
+            ><img
+              src="images/giggas.jpg"
+              alt="Giggas"
+              width="220"
+              height="240"
+              id="giggas"
+              onmouseover="giggasChanger()"
+              onmouseout="giggasReverse()"
           /></a>
           <p>Giggas</p>
         </div>
         <div class="panda">
           <a href="https://www.youtube.com/watch?v=H92NCpNqtXI" target="_blank"
-            ><img src="images/panda.jpg" alt="Panda" width="220" height="240"
+            ><img
+              src="images/panda.jpg"
+              alt="Panda"
+              width="220"
+              height="240"
+              id="panda"
+              onmouseover="pandaChanger()"
+              onmouseout="pandaReverse()"
           /></a>
           <p>Panda</p>
         </div>
@@ -156,16 +211,29 @@
           >
             <h3>Join to become a Tekken Ultra Noob!</h3>
             <label for="danranking">Tekken Dan Ranking</label>
-            <input type="number" id="rank" name="rank" /><br /><br />
+            <input
+              type="number"
+              id="rank"
+              name="rank"
+              onfocus="inputColour()"
+            /><br /><br />
             <!--can use required much easier-->
             <label for="github">GITHUB url:</label>
-            <input type="url" id="link" name="link" /><br /><br />
+            <input
+              type="url"
+              id="link"
+              name="link"
+              onfocus="inputColour2()"
+            /><br /><br />
             <label for="birthday">Birthday (date):</label>
-            <input type="date" id="bday" name="bday" /><br /><br />
-            <input type="submit" value="Submit" /><input
-              type="reset"
-              value="Clear"
-            />
+            <input
+              type="date"
+              id="bday"
+              name="bday"
+              onfocus="inputColour3()"
+            /><br /><br />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" onclick="clearInputColours()" />
           </form>
         </div>
         <video
@@ -187,5 +255,75 @@
         <a href="#resizing">To top of page</a>
       </div>
     </div>
+    <script>
+      function pictureChanger() {
+        document.getElementById("akuma").src = "images/akumas.jpg";
+      }
+      function reverseChanger() {
+        document.getElementById("akuma").src = "images/akuma.jpg";
+      }
+      function lawChanger() {
+        document.getElementById("law").src = "images/lawa.jpg";
+      }
+      function lawReverse() {
+        document.getElementById("law").src = "images/law.jpg";
+      }
+      function steveChanger() {
+        document.getElementById("steve").src = "images/stevea.jpg";
+      }
+      function steveReverse() {
+        document.getElementById("steve").src = "images/steve.jpg";
+      }
+      function kingChanger() {
+        document.getElementById("king").src = "images/kinga.jpg";
+      }
+      function kingReverse() {
+        document.getElementById("king").src = "images/king.jpg";
+      }
+      function fengChanger() {
+        document.getElementById("feng").src = "images/fenga.jpg";
+      }
+      function fengReverse() {
+        document.getElementById("feng").src = "images/feng.jpg";
+      }
+      function bryanChanger() {
+        document.getElementById("bryan").src = "images/bryana.jpg";
+      }
+      function bryanReverse() {
+        document.getElementById("bryan").src = "images/bryan.jpg";
+      }
+      function giggasChanger() {
+        document.getElementById("giggas").src = "images/giggasa.png";
+      }
+      function giggasReverse() {
+        document.getElementById("giggas").src = "images/giggas.jpg";
+      }
+      function pandaChanger() {
+        document.getElementById("panda").src = "images/pandaa.jpg";
+      }
+      function pandaReverse() {
+        document.getElementById("panda").src = "images/panda.jpg";
+      }
+      function inputColour() {
+        document.getElementById("rank").style.backgroundColor = "brown";
+        document.getElementById("rank").style.color = "white";
+      }
+      function inputColour2() {
+        document.getElementById("link").style.backgroundColor = "brown";
+        document.getElementById("link").style.color = "white";
+      }
+      function inputColour3() {
+        document.getElementById("bday").style.backgroundColor = "brown";
+        document.getElementById("bday").style.color = "white";
+      }
+      function clearInputColours() {
+        document.getElementById("rank").style.backgroundColor = "white";
+        document.getElementById("rank").style.color = "black";
+        document.getElementById("link").style.backgroundColor = "white";
+        document.getElementById("link").style.color = "black";
+        document.getElementById("bday").style.backgroundColor = "white";
+        document.getElementById("bday").style.color = "black";
+      }
+    </script>
   </body>
 </html>
